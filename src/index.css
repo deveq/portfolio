@@ -1,13 +1,176 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-hue: 270;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(var(--primary-hue), 89%, 41%);
+  --color-white: hsl(0, 5%, var(--white-lightness));
+  --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
+  --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
+
+  /* GENERAL CONTAINER VARIABLES */
+  --container-width-lg: 76%; /* 큰 디바이스 */
+  --container-width-md: 90%; /* 태블릿, 모바일 */
+
+  /* BORDER RADIUS VARIABLES */
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* GENERAL TRANSITION VARIABLE */
+  --transition: all 0.5s ease;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9rem; /* 14.4px */
+}
+
+/* GENERAL CONTAINER CLASS */
+.container {
+  width: var(--container-width-lg);
+  /* 
+    margin-inline-start, margin-inline-end의 shorthand
+    엘리먼트의 방향에 따라 start와 end에 마진을 정해줌
+    - 원래방향일 경우 left, right
+    - 90도 돌아갔을 경우 top, bottom
+    writing-mode, direction, text-orientation에 따라 달라짐
+   */
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/* GENERAL SECTION STYLES - Start */
+section {
+  padding: 10rem 0;
+  background: var(--color-light);
+  transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background: var(--color-white);
+}
+
+section > h2 {
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
+/* GENERAL SECTION STYLE - End */
+a {
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+/* GENERAL HEADING STYLE - Start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+/* GENERAL HEADING STYLE - End */
+
+/* GENERAL IMAGES STYLE - Start */
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* GENERAL IMAGES STYLE - End */
+
+/* GENERAL BUTTON STYLE - Start */
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background: var(--color-light);
+  color: var(--color-black);
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: var(--color-light);
+  transform: translateY(-0.5rem);
+}
+
+.btn.white {
+  background: var(--color-white);
+}
+
+.btn.white:hover {
+  background: transparent;
+  border-color: var(--color-white);
+}
+
+.btn.primary {
+  background: var(--color-primary);
+  /* 버튼색상은 늘 흰색이기때문에 변수를 사용하지 않음  */
+  color: white;
+}
+
+.btn.primary:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+}
+/* GENERAL BUTTON STYLE - End */
