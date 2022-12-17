@@ -1,10 +1,27 @@
+import Logo from "../../assets/logo.jpg";
+import data from "./data";
+import { IoIosColorPalette } from "react-icons/io";
 import "./navbar.css";
 
 // 큰 디바이스용 Navbar
 const Navbar = () => {
   return (
     <nav>
-      <h2>Navbar</h2>
+      <div className="container nav__container">
+        <a href="/" className="nav__logo">
+          <img className="img" src={Logo} alt="Logo" />
+        </a>
+        <ul className="nav__menu">
+          {data.map((item) => (
+            <li key={item.id}>
+              <a href={item.link}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
+        <button id="theme__icon">
+          <IoIosColorPalette />
+        </button>
+      </div>
     </nav>
   );
 };
