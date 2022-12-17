@@ -122,7 +122,7 @@ h6 {
 /* GENERAL HEADING STYLE - End */
 
 /* GENERAL IMAGES STYLE - Start */
-.img {
+img {
   display: block;
   width: 100%;
   object-fit: cover;
