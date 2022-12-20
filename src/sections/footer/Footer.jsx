@@ -1,9 +1,33 @@
+import { socials, links } from "./data";
 import "./footer.css";
 
 const Footer = () => {
   return (
     <footer id="header">
-      <h2>Footer</h2>
+      <div className="container footer__container">
+        <ul className="nav__menu">
+          {links.map((footerLink) => (
+            <li key={footerLink.id}>
+              <a href={footerLink.link}>{footerLink.title}</a>
+            </li>
+          ))}
+        </ul>
+        <div className="footer__socials">
+          {socials.map((social) => (
+            <a
+              key={social.id}
+              rel="noopener noreferrer"
+              href={social.link}
+              target="_blank"
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </div>
+      <div className="footer__copyright">
+        <small>2022 Deveq&copy; All Rights Reserved</small>
+      </div>
     </footer>
   );
 };

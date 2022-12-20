@@ -2,6 +2,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem 4rem;
+  /* 
+    align-items를 설정하지 않을 경우
+    가로 2개가 있을 때, 하나를 열면 열지 않은 부분도 길어짐(stretch땜에)
+    그래서 start로 설정해야함
+    (center일 경우 중앙으로 정렬되서 어색해짐)
+  */
   align-items: start;
 }
 
