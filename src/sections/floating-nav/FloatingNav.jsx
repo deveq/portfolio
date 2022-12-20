@@ -1,11 +1,23 @@
+import data from "./data";
+import Scrollspy from "react-scrollspy";
 import "./floating-nav.css";
+import Nav from "./Nav";
 
 // 태블릿, 모바일용 navbar
 const FloatingNav = () => {
   return (
-    <section id="floating__nav">
-      <h2>FloatingNav</h2>
-    </section>
+    <ul id="floating__nav">
+      <Scrollspy
+        className="scrollspy"
+        items={["header", "about", "services", "portfolio", "contact"]}
+        currentClassName="active"
+        offset={-200}
+      >
+        {data.map((item) => (
+          <Nav key={item.id} item={item} />
+        ))}
+      </Scrollspy>
+    </ul>
   );
 };
 

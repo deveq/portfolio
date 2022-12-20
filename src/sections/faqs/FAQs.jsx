@@ -11,7 +11,7 @@ const FAQs = () => {
         if you still have some more questions, shoot me a message from the
         contact section!
       </p>
-      <div className="container faqs__container">
+      <div className="container faqs__container" data-aos="fade-up">
         {faqs.map((faq) => (
           <FAQ key={faq.id} faq={faq} />
         ))}
