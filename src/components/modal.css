@@ -8,11 +8,35 @@
   backdrop-filter: blur(5px);
   z-index: 99;
   opacity: 0;
-  animation: animateBackdrop 0.5s ease-in forwards;
+  animation: animateBackdrop 0.3s ease-in forwards;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: -4rem;
+  border: 1px solid white;
+  width: fit-content;
+  aspect-ratio: 1/1;
+  font-size: 3rem;
+  border-radius: var(--border-radius-2);
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.close:hover {
+  border-radius: 50%;
 }
 
 @keyframes animateBackdrop {
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .close {
+    display: none;
   }
 }

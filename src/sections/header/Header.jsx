@@ -18,11 +18,11 @@ const Header = () => {
         <div className="header__profile" data-aos="fade-in">
           <img src={HeaderImage} alt="Header Portrait" />
         </div>
-        <h3 data-aos="fade-up">Hajia Bintu</h3>
+        <h3 data-aos="fade-up">Frontend Developer devEQ</h3>
         <p data-aos="fade-up">
-          You are a click away from building your dream website or web app. Send
-          me the details of your project for a modern, mobile responsive, highly
-          performant website today!
+          프론트엔드 개발자를 희망하고 있습니다. 배운 모든 것을 기록하고
+          공유하는 것을 좋아합니다. 공유의 중요성을 잘 알기에 항상 새기고
+          실천하려고 노력합니다
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">

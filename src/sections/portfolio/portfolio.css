@@ -24,6 +24,96 @@
 
 .card.portfolio__project {
   animation: animateProject 0.8s ease-in forwards;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.card.portfolio__projects-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background: #dedede;
+
+  /* text-align: center; */
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  /* opacity: 0;
+  animation: animateModal 0.5s ease-in forwards; */
+  white-space: nowrap;
+}
+
+.card.portfolio__projects-modal:hover {
+  transform: translate(-50%, -50%);
+}
+
+.portfolio__projects-modal h3 {
+  margin-top: 2rem;
+}
+
+.portfolio__projects-modal .category {
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.portfolio__projects-modal .skills {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.portfolio__projects-modal .role {
+  margin-top: 1rem;
+}
+
+.portfolio__projects-modal .role ul.role-list {
+  padding-left: 1.5rem;
+  flex-direction: column;
+  gap: 0;
+}
+
+.portfolio__projects-modal .role ul.role-list li {
+  list-style: "- ";
+}
+.portfolio__projects-modal .role ul.role-list li:after {
+  content: none;
+}
+
+/* .portfolio__projects-modal .extra p {
+  white-space: break-spaces;
+} */
+
+.portfolio__projects-modal p {
+  width: 40rem;
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+  white-space: break-spaces;
+  padding-left: 1.5rem;
+}
+
+.portfolio__projects-modal ul {
+  /* margin-top: 0.3rem; */
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.portfolio__projects-modal ul li:not(:last-of-type):after {
+  content: ",";
+}
+
+/* .portfolio__modal-chips {
+  display: flex;
+  gap: 0.5rem;
+} */
+
+.portfolio__projects-modal .description {
+  margin-top: 1rem;
+}
+
+.portfolio__projects-modal span {
+  text-transform: capitalize;
 }
 
 @keyframes animateProject {
@@ -53,11 +143,26 @@
 
 .portfolio__project-cta {
   display: flex;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .portfolio__project:hover .btn.sm {
   border-color: var(--color-white);
+}
+
+.portfolio__project-cta .btn.sm.disabled,
+.portfolio__project-cta .btn.sm.primary.disabled {
+  cursor: auto;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.portfolio__project-cta .btn.sm.disabled:hover,
+.portfolio__project-cta .btn.sm.primary.disabled:hover {
+  border-color: transparent;
+  transform: translateY(0);
 }
 
 .portfolio__project:hover .btn.sm.primary {

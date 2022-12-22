@@ -1,14 +1,19 @@
 import Card from "./../../components/Card";
 
-const Project = ({ project }) => {
+const Project = ({ project, clickHandler }) => {
   return (
-    <Card className="portfolio__project">
+    <Card
+      className="portfolio__project"
+      onClick={() => {
+        clickHandler(project);
+      }}
+    >
       <div className="portfolio__project-image">
         <img src={project.image} alt="Portfolio Project" />
       </div>
       <h4>{project.title}</h4>
       <p>{project.desc}</p>
-      <div className="portfolio__project-cta">
+      {/* <div className="portfolio__project-cta">
         <a
           href={project.demo}
           className="btn sm"
@@ -25,7 +30,7 @@ const Project = ({ project }) => {
         >
           Github
         </a>
-      </div>
+      </div> */}
     </Card>
   );
 };

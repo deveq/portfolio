@@ -2,20 +2,27 @@ import "./portfolio.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import data from "./data";
-import { useState, useMemo } from "react";
+import { useState } from "react";
+import { useProjectModal } from "../../context/ProjectModalContext";
+import ProjectsModal from "./ProjectsModal";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState(data);
-  const categories = data.map((item) => item.category);
+  const categories = data.map((item) => item.category).flat();
   const uniqueCategories = ["all", ...new Set(categories)];
+  const { setShowProjectModal, setItem } = useProjectModal();
+  const openProjectModal = (item) => {
+    setItem(item);
+    setShowProjectModal(true);
+  };
 
   const filterProjectsHandler = (category) => {
     if (category === "all") {
       setProjects(data);
       return;
     }
-    const filteredProjects = data.filter(
-      (project) => project.category === category,
+    const filteredProjects = data.filter((project) =>
+      project.category.includes(category),
     );
     setProjects(filteredProjects);
   };
@@ -31,8 +38,9 @@ const Portfolio = () => {
           categories={uniqueCategories}
           onFilterProjects={filterProjectsHandler}
         />
-        <Projects projects={projects} />
+        <Projects projects={projects} clickHandler={openProjectModal} />
       </div>
+      <ProjectsModal className="portfolio__projects-modal" />
     </section>
   );
 };
