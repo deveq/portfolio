@@ -11,6 +11,7 @@ import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
 import Theme from "./theme/Theme";
 import { useThemeContext } from "./context/ThemeContext";
+import Thumbnail from "./components/Thumbnail";
 
 const App = () => {
   const mainRef = useRef();
@@ -57,12 +58,11 @@ const App = () => {
       <About />
       <Services />
       <Portfolio />
-      <Testimonials />
-      <FAQs />
       <Contact />
       <Footer />
       <Theme />
       {showFloatingNav && <FloatingNav />}
+      {/* <Thumbnail /> */}
     </main>
   );
 };

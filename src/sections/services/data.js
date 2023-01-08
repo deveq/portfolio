@@ -1,32 +1,34 @@
-import { SiAdobexd } from "react-icons/si";
-import { RiReactjsLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { AiFillAppstore } from "react-icons/ai";
+import { AiFillAppstore, AiFillHtml5 } from "react-icons/ai";
+import { HiDevicePhoneMobile } from "react-icons/hi2";
+import { DiJavascript1 } from "react-icons/di";
+
+// web, app, backend, etc
 
 const data = [
   {
     id: 1,
-    icon: <SiAdobexd />,
-    title: "UI/UX Design",
-    desc: "My designs are modern and intuitive. I use industry-standard rules to make sure your users have fun using your product.",
+    icon: <AiFillHtml5 />,
+    title: "Frontend Development",
+    desc: "React.js, Next.js, Vanilla.js, styled-components, TailwindCSS, Web3.js",
   },
   {
     id: 2,
-    icon: <RiReactjsLine />,
-    title: "Frontend Development",
-    desc: "Your product will look good and will be accessible on all devices, including mobile phones, tablets, and desktop.",
+    icon: <HiDevicePhoneMobile />,
+    title: "App Development",
+    desc: "React Native, Android, iOS",
   },
   {
     id: 3,
     icon: <FaServer />,
     title: "Backend Development",
-    desc: "The security of your business/product is taken seriously right from the start of the project. I will make sure your website/app is secure from attacks.",
+    desc: "Node.js, Express, Socket.io, Sequelize",
   },
   {
     id: 4,
-    icon: <AiFillAppstore />,
-    title: "App Development",
-    desc: "Unlike other developers in the market, I will building an app that runs on both IOS and Android devices without any extra cost to you.",
+    icon: <DiJavascript1 />,
+    title: "Languages",
+    desc: "Javascript, Typescript, Java, Kotlin, Objective-C",
   },
 ];
 

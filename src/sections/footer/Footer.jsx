@@ -8,7 +8,9 @@ const Footer = () => {
         <ul className="nav__menu">
           {links.map((footerLink) => (
             <li key={footerLink.id}>
-              <a href={footerLink.link}>{footerLink.title}</a>
+              <a href={footerLink.link} title={footerLink.title}>
+                {footerLink.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -19,6 +21,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               href={social.link}
               target="_blank"
+              title={social.title}
             >
               {social.icon}
             </a>

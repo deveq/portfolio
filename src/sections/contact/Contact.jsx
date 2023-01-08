@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <h2>Get In Touch</h2>
-      <p>Shoot me a message via any of the links below!</p>
+      <p>이메일 혹은 오픈카톡을 통해 연락주세요!</p>
       <div className="container contact__container" data-aos="fade-up">
         {contacts.map((contact) => (
           <a
@@ -13,6 +13,7 @@ const Contact = () => {
             href={contact.link}
             target="_blank"
             rel="noopener noreferrer"
+            title={contact.title}
           >
             {contact.icon}
           </a>

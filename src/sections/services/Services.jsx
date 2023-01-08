@@ -4,9 +4,9 @@ import Card from "../../components/Card";
 
 const Services = () => {
   return (
-    <section id="services">
-      <h2>Services</h2>
-      <p>I give you the best in all the services below</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>지금까지 경험해본 기술들</p>
       <div className="container services__container" data-aos="fade-up">
         {data.map((item) => (
           <Card key={item.id} className="service light">

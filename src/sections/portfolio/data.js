@@ -1,12 +1,8 @@
-import Image1 from "../../assets/project1.jpg";
-import Image2 from "../../assets/project2.jpg";
-import Image3 from "../../assets/project3.jpg";
-import Image4 from "../../assets/project4.jpg";
-import Image5 from "../../assets/project5.jpg";
-import Image6 from "../../assets/project6.jpg";
-import Image7 from "../../assets/project7.jpg";
-import Image8 from "../../assets/project8.jpg";
-import Image9 from "../../assets/project9.jpg";
+import Image1 from "../../assets/windee1.png";
+import Image2 from "../../assets/windee2.png";
+import Image3 from "../../assets/wantit.png";
+import Image4 from "../../assets/bookplate.png";
+import Image5 from "../../assets/portfolio.png";
 // all, work, study
 const data = [
   {
@@ -32,7 +28,7 @@ const data = [
   {
     id: 2,
     category: ["frontend", "work"],
-    image: Image1,
+    image: Image2,
     title: "Basic Windee",
     desc: "NFT 마켓 플레이스. 개선된 Frontle을 이용한 두번째 프로젝트",
     demo: "https://test.windee.io",
@@ -53,7 +49,7 @@ const data = [
   {
     id: 3,
     category: ["frontend", "work"],
-    image: Image1,
+    image: Image3,
     title: "Wantit - App",
     desc: "휴대폰 중고거래 플랫폼",
     demo: "https://play.google.com/store/apps/details?id=com.realseller.wantit&hl=ko&gl=US",
@@ -71,7 +67,7 @@ const data = [
   {
     id: 4,
     category: ["backend", "work"],
-    image: Image1,
+    image: Image3,
     title: "Wantit - server",
     desc: "Wantit 서비스의 채팅서버 및 웹서버",
     // demo: "http://egatortutorials.com",
@@ -88,7 +84,7 @@ const data = [
   {
     id: 5,
     category: ["frontend", "study"],
-    image: Image1,
+    image: Image4,
     title: "BookPlate",
     desc: "도서 문장 기록 및 공유 앱",
     // demo: "http://egatortutorials.com",
@@ -103,7 +99,7 @@ const data = [
   {
     id: 8,
     category: ["frontend", "study"],
-    image: Image1,
+    image: Image5,
     title: "Portfolio web",
     desc: "포트폴리오 웹 사이트",
     // demo: "http://egatortutorials.com",

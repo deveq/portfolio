@@ -28,7 +28,7 @@ const Header = () => {
         </p>
         <div className="header__cta" data-aos="fade-up">
           <a href="#contact" className="btn primary">
-            Let's Talk
+            Contact
           </a>
           <a href="#portfolio" className="btn light">
             My Work
@@ -36,9 +36,8 @@ const Header = () => {
         </div>
         <div className="header__socials">
           {data.map((item) => (
-            <div>
+            <div key={item.id}>
               <a
-                key={item.id}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"

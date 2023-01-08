@@ -7,9 +7,9 @@ const data = [
   { id: 2, link: "#about", icon: <BsPersonFill />, title: "About" },
   {
     id: 3,
-    link: "#services",
+    link: "#skills",
     icon: <MdHomeRepairService />,
-    title: "Services",
+    title: "Skills",
   },
   { id: 4, link: "#portfolio", icon: <AiFillAppstore />, title: "Works" },
   { id: 5, link: "#contact", icon: <AiFillMessage />, title: "Contact" },

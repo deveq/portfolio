@@ -19,7 +19,9 @@ const About = () => {
           <div className="about__cards">
             {data.map((item) => (
               <Card key={item.id} className="about__card">
-                <span className="about__card-icon">{item.icon}</span>
+                <a href={item.link} rel="noopener noreferrer" target="_blank">
+                  <span className="about__card-icon">{item.icon}</span>
+                </a>
                 <h5>{item.title}</h5>
                 <small>{item.desc}</small>
               </Card>

@@ -1,0 +1,30 @@
+#thumbnail {
+  margin: 20px;
+  width: 640;
+  height: 360;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(70, 200, 230, 0.4);
+  overflow: hidden;
+}
+
+#thumbnail div {
+  width: 35%;
+  transform: translateY(4rem);
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#thumbnail div:nth-child(1) {
+  position: absolute;
+  z-index: 10;
+  transform: translateY(3rem);
+}
+
+#thumbnail div img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
