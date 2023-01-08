@@ -1,9 +1,11 @@
 import AboutImage from "../../assets/about.jpg";
 import CV from "../../assets/cv.pdf";
 import "./about.css";
-import { HiDownload } from "react-icons/hi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 import Card from "../../components/Card";
 import data from "./data";
+
+const resume = "https://career.programmers.co.kr/pr/fleflefle1991_5939";
 
 const About = () => {
   return (
@@ -37,8 +39,8 @@ const About = () => {
             <br />
             감사합니다!
           </p>
-          <a href={CV} download className="btn primary">
-            Download CV <HiDownload />{" "}
+          <a href={resume} download className="btn primary">
+            Resume <HiOutlineDocumentText className="resume" />{" "}
           </a>
         </div>
       </div>

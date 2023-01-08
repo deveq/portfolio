@@ -9,6 +9,7 @@
   max-height: 40rem;
   border: 1rem solid var(--color-white);
   transition: var(--transition);
+  overflow: hidden;
 }
 
 .about__portrait:hover {
@@ -53,6 +54,11 @@
 
 .about__right .btn {
   margin-top: 2.5rem;
+}
+
+.resume {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
 }
 
 /* 태블릿 */
