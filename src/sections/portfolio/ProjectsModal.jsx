@@ -78,7 +78,7 @@ const Modal = ({ className }) => {
                 <p>{item.learned}</p>
               </div>
 
-              <div className="portfolio__project-cta">
+              {/* <div className="portfolio__project-cta">
                 <a
                   href={item.demo}
                   className={`btn sm ${item.demo ? "" : "disabled"}`}
@@ -95,7 +95,7 @@ const Modal = ({ className }) => {
                 >
                   Github
                 </a>
-              </div>
+              </div> */}
             </Card>
           </>,
           document.querySelector("#overlays"),
