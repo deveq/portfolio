@@ -45,7 +45,11 @@ header {
   gap: 1rem;
 }
 
-.header__socials a {
+.header__socials > div {
+  padding-right: 1.5rem;
+}
+
+.header__socials > div a {
   /* aspect-ratio = width, height의 비율을 정해줌 */
   width: 1.8rem;
   /* height: 1.8rem; */
@@ -57,7 +61,7 @@ header {
   border-radius: var(--border-radius-3);
 }
 
-.header__socials a:hover {
+.header__socials div:hover a {
   background: var(--color-primary);
   color: var(--color-white);
   transform: translateX(-0.5rem);

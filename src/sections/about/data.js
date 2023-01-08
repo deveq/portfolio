@@ -1,15 +1,25 @@
-import { FaAward } from "react-icons/fa";
-import { TbBooks } from "react-icons/tb";
-import { BiHappyHeartEyes } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { ReactComponent as Velog } from "../../assets/velog.svg";
 
 const data = [
-  { id: 1, icon: <FaAward />, title: "Experience", desc: "3+ Years Working" },
-  { id: 2, icon: <TbBooks />, title: "Projects", desc: "180+ Completed" },
+  {
+    id: 1,
+    icon: <IoCodeSlashOutline />,
+    title: "BOJ",
+    desc: "Silver 2",
+  },
+  {
+    id: 2,
+    icon: <BsGithub />,
+    title: "Github",
+    desc: "Total 800+ commits, 2022",
+  },
   {
     id: 3,
-    icon: <BiHappyHeartEyes />,
-    title: "Clients",
-    desc: "70+ happy clients",
+    icon: <Velog width={20} height={20} />,
+    title: "Velog",
+    desc: "40+ posts",
   },
 ];
 
