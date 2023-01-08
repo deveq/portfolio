@@ -1,11 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HeaderImage from "../../assets/header.jpg";
 import AOS from "aos";
 import data from "./data";
 import "./header.css";
 import "aos/dist/aos.css";
+import useBuildDate from "../../hooks/useBuildDate";
 
 const Header = () => {
+  const buildDate = useBuildDate();
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -49,6 +52,11 @@ const Header = () => {
           ))}
         </div>
       </div>
+      {buildDate && (
+        <div className="header__build-date">
+          <span>Last updated: {buildDate}</span>
+        </div>
+      )}
     </header>
   );
 };

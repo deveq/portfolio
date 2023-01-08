@@ -63,20 +63,25 @@ const Modal = ({ className }) => {
                   {item.extra}
                 </p>
               </div>
-              <div className="role">
-                <h4>Role</h4>
-                <ul className="role-list">
-                  {item.role.map((role, index) => (
-                    <li key={index}>
-                      <span>{role}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="extra">
-                <h4>What I Learned</h4>
-                <p>{item.learned}</p>
-              </div>
+              {item.role.length > 0 && (
+                <div className="role">
+                  <h4>Role</h4>
+                  <ul className="role-list">
+                    {item.role.map((role, index) => (
+                      <li key={index}>
+                        <span>{role}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {item.learned && (
+                <div className="extra">
+                  <h4>What I Learned</h4>
+                  <p>{item.learned}</p>
+                </div>
+              )}
 
               {/* <div className="portfolio__project-cta">
                 <a

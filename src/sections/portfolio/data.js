@@ -105,8 +105,8 @@ const data = [
     // demo: "http://egatortutorials.com",
     // github: "https://github.com/egattor",
     skills: ["react"],
-    role: [""],
-    extra: "",
+    role: [],
+    extra: "다크모드와 테마",
     learned: "",
   },
   // {

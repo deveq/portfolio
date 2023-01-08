@@ -35,11 +35,18 @@ const About = () => {
             리액트 네이티브 앱 개발을 시작으로 재직중인 직장에서는 바닐라js로 웹
             개발을 하고 있으며
             <br />
-            사이드프로젝트로 리액트 네이티브로 앱 개발(책그릇)을 하고 있습니다.
+            사이드프로젝트로 리액트 네이티브로 앱 개발(bookplate)을 하고
+            있습니다.
             <br />
             감사합니다!
           </p>
-          <a href={resume} download className="btn primary">
+          <a
+            href={resume}
+            download
+            className="btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume <HiOutlineDocumentText className="resume" />{" "}
           </a>
         </div>
