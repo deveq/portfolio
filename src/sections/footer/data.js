@@ -1,6 +1,3 @@
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiOutlineDribbble } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 
 import { ReactComponent as Kakao } from "../../assets/kakao.svg";

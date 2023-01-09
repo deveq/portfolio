@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> component 기본 렌더링 테스트 1`] = `
+<div>
+  <article
+    class="card test-className"
+  >
+    <div>
+      ChildComponent
+    </div>
+  </article>
+</div>
+`;

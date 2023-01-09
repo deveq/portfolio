@@ -1,5 +1,6 @@
 .card {
-  background: var(--color-white);
+  /* background: var(--color-white); */
+  background-color: red;
   padding: 1.5rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius-1);
