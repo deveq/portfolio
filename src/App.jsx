@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect } from "react";
 import Navbar from "./sections/navbar/Navbar";
 import Header from "./sections/header/Header";
 import About from "./sections/about/About";
@@ -12,6 +12,7 @@ import { useThemeContext } from "./context/ThemeContext";
 import { useProjectModal } from "./context/ProjectModalContext";
 import projectData from "./sections/portfolio/data";
 import { getQueryString } from "./utils/utils";
+import { useLocation } from "react-router-dom";
 
 const App = () => {
   const mainRef = useRef();
@@ -20,6 +21,7 @@ const App = () => {
   const [showFloatingNav, setShowFloatingNav] = useState(true);
   const [siteYPosition, setSiteYPosition] = useState(0);
   const { setShowProjectModal, setItem } = useProjectModal();
+  const location = useLocation();
 
   useEffect(() => {
     if (location.search) {
