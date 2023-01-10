@@ -9,7 +9,9 @@ const useBuildDate = () => {
       const year = tempDate.getFullYear();
       const month = String(tempDate.getMonth() + 1).padStart(2, "0");
       const day = String(tempDate.getDate()).padStart(2, "0");
-      setBuildDate(`${year}/${month}/${day}`);
+      const hour = String(tempDate.getHours()).padStart(2, "0");
+      const min = String(tempDate.getMinutes()).padStart(2, "0");
+      setBuildDate(`${year}/${month}/${day} ${hour}:${min}`);
     }
   }, []);
 

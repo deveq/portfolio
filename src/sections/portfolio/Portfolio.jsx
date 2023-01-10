@@ -2,11 +2,11 @@ import "./portfolio.css";
 import Projects from "./Projects";
 import ProjectsCategories from "./ProjectsCategories";
 import data from "./data";
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 import { useProjectModal } from "../../context/ProjectModalContext";
 import ProjectsModal from "./ProjectsModal";
 
-const Portfolio = () => {
+const Portfolio = (props, ref) => {
   const [projects, setProjects] = useState(data);
   const categories = data.map((item) => item.category).flat();
   const uniqueCategories = ["all", ...new Set(categories)];
@@ -27,7 +27,7 @@ const Portfolio = () => {
     setProjects(filteredProjects);
   };
   return (
-    <section id="portfolio">
+    <section id="portfolio" ref={ref}>
       <h2>Projects</h2>
       {/* <p>
         Check out some of the projects I recently worked on for my clients. Use
@@ -45,4 +45,5 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default forwardRef(Portfolio);
+// export default Portfolio;
