@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.7155ab1c.css",
-    "main.js": "/react-portfolio/static/js/main.f757d426.js",
-    "static/media/cv.pdf": "/react-portfolio/static/media/cv.eb7e7933658a4be6df96.pdf",
-    "static/media/header.jpg": "/react-portfolio/static/media/header.93da6a513bf0e488876c.jpg",
-    "static/media/about.jpg": "/react-portfolio/static/media/about.117a78f07f581956c92d.jpg",
-    "static/media/windee1.png": "/react-portfolio/static/media/windee1.39fa26338f6b09923896.png",
-    "static/media/windee2.png": "/react-portfolio/static/media/windee2.f6512cdd54a96d711ad5.png",
-    "static/media/bookplate.png": "/react-portfolio/static/media/bookplate.85f8941f788c3e0e8845.png",
-    "static/media/portfolio.png": "/react-portfolio/static/media/portfolio.24042c0899bc4056f642.png",
-    "static/media/wantit.png": "/react-portfolio/static/media/wantit.0e04af7eea9ea0c7d586.png",
-    "static/media/velog.svg": "/react-portfolio/static/media/velog.debf327d4dad400d100efb3e43f60ce2.svg",
-    "static/media/kakao.svg": "/react-portfolio/static/media/kakao.b815274813c584b812b10c1f45308dfa.svg",
-    "index.html": "/react-portfolio/index.html",
-    "main.7155ab1c.css.map": "/react-portfolio/static/css/main.7155ab1c.css.map",
-    "main.f757d426.js.map": "/react-portfolio/static/js/main.f757d426.js.map"
+    "main.css": "/portfolio/static/css/main.7155ab1c.css",
+    "main.js": "/portfolio/static/js/main.32321ed6.js",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.eb7e7933658a4be6df96.pdf",
+    "static/media/header.jpg": "/portfolio/static/media/header.93da6a513bf0e488876c.jpg",
+    "static/media/about.jpg": "/portfolio/static/media/about.117a78f07f581956c92d.jpg",
+    "static/media/windee1.png": "/portfolio/static/media/windee1.39fa26338f6b09923896.png",
+    "static/media/windee2.png": "/portfolio/static/media/windee2.f6512cdd54a96d711ad5.png",
+    "static/media/bookplate.png": "/portfolio/static/media/bookplate.85f8941f788c3e0e8845.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.24042c0899bc4056f642.png",
+    "static/media/wantit.png": "/portfolio/static/media/wantit.0e04af7eea9ea0c7d586.png",
+    "static/media/velog.svg": "/portfolio/static/media/velog.debf327d4dad400d100efb3e43f60ce2.svg",
+    "static/media/kakao.svg": "/portfolio/static/media/kakao.b815274813c584b812b10c1f45308dfa.svg",
+    "index.html": "/portfolio/index.html",
+    "main.7155ab1c.css.map": "/portfolio/static/css/main.7155ab1c.css.map",
+    "main.32321ed6.js.map": "/portfolio/static/js/main.32321ed6.js.map"
   },
   "entrypoints": [
     "static/css/main.7155ab1c.css",
-    "static/js/main.f757d426.js"
+    "static/js/main.32321ed6.js"
   ]
 }
